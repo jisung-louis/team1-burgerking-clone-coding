@@ -181,10 +181,11 @@ a {
     background: url(https://www.burgerking.co.kr/img/btn_top.svg) no-repeat center;
 }
 
+/* FOOTER */
 /* =========================================
    4. 푸터 영역 (Footer) - 수정 및 통합
    ========================================= */
-#footer {
+   #footer {
     background-color: #fffcf8; /* 버거킹 하단 밝은 배경 */
     border-top: 1px solid #f2ebe0;
 }
@@ -207,12 +208,14 @@ a {
     display: flex;
     gap: 30px; /* 메뉴 간격 조정 */
     flex-wrap: wrap;
+    margin-left: 250px;
 }
 
 .menu_wrap a {
     color: #ac928a;
     font-size: 14px;
     font-weight: 500;
+    font-family: Sandoll GothicNeoRound1;
 }
 
 .menu_wrap a.bold {
@@ -228,6 +231,7 @@ a {
     font-size: 14px;
     font-weight: 700;
     transition: background 0.3s;
+    font-family: Sandoll GothicNeoRound;
 }
 
 .btn_recruit:hover {
@@ -252,6 +256,8 @@ a {
     font-weight: 900;
     color: #ac928a;
     letter-spacing: -1px;
+    font-family: Sandoll GothicNeoRound;
+    font-weight: 900;
 }
 
 .footer .info p {
@@ -259,11 +265,14 @@ a {
     color: #ac928a;
     line-height: 1.8;
     font-weight: 400; /* 정보 텍스트는 가독성을 위해 얇게 */
+    font-family: Sandoll GothicNeoRound1;
 }
 
 .txt_line {
     text-decoration: underline;
     margin-left: 5px;
+    color: #ac928a;
+    font-family: Sandoll GothicNeoRound1;
 }
 
 /* SNS 아이콘 그룹 */
@@ -298,7 +307,6 @@ a {
     height: 14px;
     background-color: #e0d8cc;
 }
-
 /* 반응형 대응 (필요시) */
 @media (max-width: 768px) {
     .card { flex-direction: column; padding: 30px; }

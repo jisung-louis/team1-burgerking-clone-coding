@@ -417,3 +417,130 @@ button {
     display: flex;
     
 }
+
+/* FOOTER */
+/* =========================================
+   4. 푸터 영역 (Footer) - 수정 및 통합
+   ========================================= */
+   #footer {
+    background-color: #fffcf8; /* 버거킹 하단 밝은 배경 */
+    border-top: 1px solid #f2ebe0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+/* 푸터 상단 메뉴 및 채용 버튼 */
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu_wrap {
+    display: flex;
+    gap: 30px; /* 메뉴 간격 조정 */
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+
+.menu_wrap a {
+    color: #ac928a;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Sandoll GothicNeoRound1;
+}
+
+.menu_wrap a.bold {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.btn_recruit {
+    background-color: #502213; /* 버거킹 갈색 */
+    color: #fff !important;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s;
+    font-family: Sandoll GothicNeoRound;
+}
+
+.btn_recruit:hover {
+    background-color: #3a1d0f;
+}
+
+/* 푸터 하단 로고 및 정보 */
+.footer .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info_area_flex {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.footer_logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ac928a;
+    letter-spacing: -1px;
+    font-family: Sandoll GothicNeoRound;
+    font-weight: 900;
+}
+
+.footer .info p {
+    font-size: 13px;
+    color: #ac928a;
+    line-height: 1.8;
+    font-weight: 400; /* 정보 텍스트는 가독성을 위해 얇게 */
+    font-family: Sandoll GothicNeoRound1;
+}
+
+.txt_line {
+    text-decoration: underline;
+    margin-left: 5px;
+    color: #ac928a;
+    font-family: Sandoll GothicNeoRound1;
+}
+
+/* SNS 아이콘 그룹 */
+.sns_group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sns_icons {
+    display: flex;
+    gap: 10px;
+}
+
+.sns_icons a, .btn_tim {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0; /* 글자 숨김 */
+}
+
+.ico_insta { background-image: url('https://www.burgerking.co.kr/img/ico_sns_instagram.svg'); }
+.ico_face { background-image: url('https://www.burgerking.co.kr/img/ico_sns_facebook.svg'); }
+.ico_x { background-image: url('https://www.burgerking.co.kr/img/ico_sns_x.svg'); }
+.ico_yt { background-image: url('https://www.burgerking.co.kr/img/ico_sns_youtube.svg'); }
+.btn_tim { background-image: url('https://www.burgerking.co.kr/img/ico_timhortons.svg'); }
+
+.bar {
+    width: 1px;
+    height: 14px;
+    background-color: #e0d8cc;
+}
