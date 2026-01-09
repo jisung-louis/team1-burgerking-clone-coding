@@ -2,6 +2,7 @@
     margin:0; padding:0;
     box-sizing:border-box;
     font-family:"BKBulMatPro-Bold", "SDGothicNeoRound-hEb",sans-serif;
+    font-size:12px;
 }
 @font-face {
     font-family: 'BKBulMatPro-Bold';
@@ -10,8 +11,40 @@
 }
 @font-face {
     font-family: 'SDGothicNeoRound-hEb';
-    src: url('../font/SDGothicNeoRound-hEb.otf') format('otf');
+    src: url('../font/SDGothicNeoRound-hEb.otf') format('opentype');
 }
+@font-face {
+    font-family: Sandoll GothicNeoRound;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/font/SDGothicNeoRound-gBd.otf) format("opentype")
+}
+@font-face {
+    font-family: Sandoll GothicNeoRound1;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/font/SDGothicNeoRound-hEb.otf) format("opentype")
+}
+
+
+li {
+    list-style-type: none;
+    display: list-item;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    color: #502314;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    outline: none;
+    display: inline-flex;
+}   
 /* 개발용 */
 /* *{
     border: 0.1px solid red;
@@ -83,9 +116,9 @@
 }
 .mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons .downloadButtonContainer .downloadButton{
     display: block;
-    padding: 8px;
-    width: 130px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    width: 150px;
+    border-radius: 40px;
     background-color: #f1e7db;
     border-style: none;
 }
@@ -133,7 +166,6 @@
     font-size: 25px;
     color: #502314;
     margin-top: 20px;
-    /* font-family: SDGothicNeoRound-hEb; */
 }
 
 /* introduceContainer */
@@ -156,6 +188,8 @@
 .introduceContainer .wideBanner .left .description{
     font-size: 25px;
     margin-top: 20px;
+    font-family: Sandoll GothicNeoRound1;
+    line-height: 40px;
 }
 .introduceContainer .wideBanner .right{
     display: flex;
@@ -206,7 +240,8 @@
     width: 60%;
 }
 .appInstallContainer .right .title{
-    font-size: 40px;
+    font-size: 35px;
+    font-family: Sandoll GothicNeoRound1;
 }
 .appInstallContainer .right .badge-container{
     margin: 30px 0;
@@ -219,6 +254,7 @@
     color: #fffcf8;
     font-size: 20px;
     border-radius: 10px;
+    font-family: Sandoll GothicNeoRound1;
 }
 .appInstallContainer .right .qr-and-buttons{
     display: flex;
@@ -248,6 +284,7 @@
 .sectionTitle{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .sectionTitle .titleText{
     color: #502314;
@@ -255,11 +292,12 @@
 }
 .sectionTitle .optionText{
     color: #502314;
-    font-size: 30px;
+    font-size: 25px;
 }
 .sectionTitle .optionText a{
     color: #502314;
     text-decoration: none;
+    font-family: Sandoll GothicNeoRound1;
 }
 .cardContainer{
     margin-top: 20px;
@@ -290,13 +328,15 @@
     display: inline;
     padding: 10px 20px;
     color: #502314;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 10px;
+    font-family: Sandoll GothicNeoRound1;
 }
 .cardContainer .card .card-title{
     margin-top: 35px;
     color: #502314;
     font-size: 30px;
+    font-family: Sandoll GothicNeoRound1;
 }
 .cardContainer .card .title-center{
     text-align: center;
@@ -309,6 +349,7 @@
     align-items: center;
     margin-right: 20px;
     margin-top: 20px;
+    font-family: Sandoll GothicNeoRound1;
 }
 .cardContainer .card .card-button .ico-move{
     position: relative;
@@ -336,4 +377,332 @@
     background-color: lightgray;
     border-radius: 5px;
     margin: 0 10px;
+}
+.font-round{
+    font-family: Sandoll GothicNeoRound1;
+}
+.red{
+    color:#d62300;
+}
+
+/* ============= header ============= */
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color: #f5ebdc;
+    padding: 0 60px;
+    width: 100%;
+    z-index: 50;
+}
+
+#title {
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    height: 98px;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+#logo {
+    display: block;
+}
+
+.title_logo {
+    display: inline-block;
+    min-width: 200px;
+    height: 24px;
+    text-indent: -99999px;
+    background: url(/news/img/logo.svg) no-repeat 50%;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.menu_bar{
+    display: flex;
+}
+
+.menu_bar > ul{
+   display: flex;
+}
+
+.menu_bar >  li{
+    position: relative;
+}
+
+
+.m1{
+    height: 100%;
+    display: block;
+}
+
+.m1 > a{
+    display: flex;
+    padding: 10px 20px;
+    height: 100%;
+}
+
+.m1 > a > span{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.side_menu{
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    gap: 10px;
+    width: 18%;
+}
+
+.side_menu a{
+    display: block;
+    padding: 12px 5px 12px;
+}
+
+.채용{
+    background: url(/news/img/채용사이트.svg) no-repeat left 16px center;
+    background-color: #502314;
+    border-radius: 30px;
+    width: 48%;
+}
+.채용 > span{
+
+    font-family: Sandoll GothicNeoRound;
+}
+
+
+
+.가맹점{
+    border-radius: 320px;
+    background: url(/news/img/가맹점모집.svg) no-repeat left 16px center;
+    background-color: #502314;
+    background-size: 14px;
+    width: 52%;
+    
+}
+.가맹점 > span{
+
+    font-family: Sandoll GothicNeoRound;
+}
+
+
+.side_menu > a{
+    height: 36px;
+    padding: 5px 16px 5px 34px;
+    font-size: 14px;
+    color: #f5ebdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.side_menu > button{
+    height: 36px;
+    padding: 5px 16px 5px 34px;
+    font-size: 14px;
+    color: #f5ebdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+}
+
+.sub_menu{
+    top: 80px;
+    left: -250px;
+    width: 600px;
+    display: flex;
+    background-color: #502314;
+    border-radius: 50px; 
+    position: absolute;
+    padding-left: 25px;
+    font-size: 17px;
+    display: none;
+}
+
+.H1:hover .sub_menu{
+    display: flex;
+}
+
+.sub_menu a{
+    display: block;
+    height: 48px;
+    padding: 5px 12px;
+    font-size: 17px;
+    line-height: 38px;
+    color: #89665b;
+}
+
+.sub_menu > li > a > span{
+    font-size: 17px;
+}
+
+.sub_menu2{
+    top: 80px;
+    left: -50px;
+    width: 210px;
+    display: flex;
+    background-color: #502314;
+    border-radius: 50px; 
+    position: absolute;
+    padding-left: 25px;
+    font-size: 17px;
+    display: none;
+}
+
+.sub_menu2 > li > a > span{
+    font-size: 17px;
+}
+
+
+.sub_menu2 a{
+    display: block;
+    height: 48px;
+    padding: 5px 12px;
+    font-size: 17px;
+    line-height: 38px;
+    color: #89665b;
+}
+
+.H2:hover .sub_menu2{
+    display: flex;
+    
+}
+
+
+
+/* FOOTER */
+/* =========================================
+   4. 푸터 영역 (Footer) - 수정 및 통합
+   ========================================= */
+#footer {
+    background-color: #fffcf8; /* 버거킹 하단 밝은 배경 */
+    border-top: 1px solid #f2ebe0;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+/* 푸터 상단 메뉴 및 채용 버튼 */
+.footer_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.menu_wrap {
+    display: flex;
+    gap: 30px; /* 메뉴 간격 조정 */
+    flex-wrap: wrap;
+    margin-left: 250px;
+}
+
+.menu_wrap a {
+    color: #ac928a;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Sandoll GothicNeoRound1;
+}
+
+.menu_wrap a.bold {
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.btn_recruit {
+    background-color: #502213; /* 버거킹 갈색 */
+    color: #fff !important;
+    padding: 10px 24px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s;
+    font-family: Sandoll GothicNeoRound;
+}
+
+.btn_recruit:hover {
+    background-color: #3a1d0f;
+}
+
+/* 푸터 하단 로고 및 정보 */
+.footer .cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.info_area_flex {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.footer_logo {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ac928a;
+    letter-spacing: -1px;
+    font-family: Sandoll GothicNeoRound;
+    font-weight: 900;
+}
+
+.footer .info p {
+    font-size: 13px;
+    color: #ac928a;
+    line-height: 1.8;
+    font-weight: 400; /* 정보 텍스트는 가독성을 위해 얇게 */
+    font-family: Sandoll GothicNeoRound1;
+}
+
+.txt_line {
+    text-decoration: underline;
+    margin-left: 5px;
+    color: #ac928a;
+    font-family: Sandoll GothicNeoRound1;
+}
+
+/* SNS 아이콘 그룹 */
+.sns_group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.sns_icons {
+    display: flex;
+    gap: 10px;
+}
+
+.sns_icons a, .btn_tim {
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 0; /* 글자 숨김 */
+}
+
+.ico_insta { background-image: url('https://www.burgerking.co.kr/img/ico_sns_instagram.svg'); }
+.ico_face { background-image: url('https://www.burgerking.co.kr/img/ico_sns_facebook.svg'); }
+.ico_x { background-image: url('https://www.burgerking.co.kr/img/ico_sns_x.svg'); }
+.ico_yt { background-image: url('https://www.burgerking.co.kr/img/ico_sns_youtube.svg'); }
+.btn_tim { background-image: url('https://www.burgerking.co.kr/img/ico_timhortons.svg'); }
+
+.bar {
+    width: 1px;
+    height: 14px;
+    background-color: #e0d8cc;
 }
