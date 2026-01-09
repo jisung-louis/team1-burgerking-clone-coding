@@ -1,14 +1,339 @@
 *{
     margin:0; padding:0;
-    box-sizing: content-box;
-    font-size: 12px;
-    font-family: "BKBulMatPro-Bold","Pretendard",sans-serif;
+    box-sizing:border-box;
+    font-family:"BKBulMatPro-Bold", "SDGothicNeoRound-hEb",sans-serif;
 }
 @font-face {
     font-family: 'BKBulMatPro-Bold';
     src: url('../font/BKBulMatPro-Bold.woff') format('woff');
     font-weight: 700; 
 }
+@font-face {
+    font-family: 'SDGothicNeoRound-hEb';
+    src: url('../font/SDGothicNeoRound-hEb.otf') format('otf');
+}
+/* 개발용 */
+/* *{
+    border: 0.1px solid red;
+    padding: 0.1px;
+} */
 #wrap{
     background-color: #f5ebdc;
+}
+#header{
+
+}
+#footer{
+}
+
+/* MAIN
+    작업자 : 전지성
+ */
+#main{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+/* mainBannerContainer */
+.mainBannerContainer{
+    display: flex;
+}
+.mainBannerContainer .left{
+    width: 60%;
+    overflow: hidden;
+    margin-right: 20px;
+
+}
+.mainBannerContainer .left .left-banner-img{
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+.mainBannerContainer .right{
+    width: 40%;
+    height: 100%;
+}
+.mainBannerContainer .right .smallTopBannerContainer{
+    color: #502314;
+    text-align: center;
+    padding: 16px;
+    background: url('/image/bg_home_appdown.svg') no-repeat right 12px bottom 20px;
+    background-color: #fffcf8;
+    height: 50%;
+}
+.mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+}
+.mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons .qrContainer{
+    height: 90%;
+    margin-right: 30px;
+}
+.mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons .qrContainer .qrCodeImg{
+    height: 100%;
+    object-fit: cover;
+}
+.mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons .downloadButtonContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.mainBannerContainer .right .smallTopBannerContainer .qr-and-buttons .downloadButtonContainer .downloadButton{
+    display: block;
+    padding: 8px;
+    width: 130px;
+    border-radius: 20px;
+    background-color: #f1e7db;
+    border-style: none;
+}
+.mainBannerContainer .right .smallBottomBannerContainer{
+    background: url('/image/bg_home_search.svg') no-repeat center bottom 20px;
+    background-color: #502314;
+    color: #fffcf8;
+    text-align: center;
+    padding: 16px;
+    height: 200px;
+    margin-top:20px;
+}
+
+/* adVideoContainer */
+.adVideoSectionContainer{
+    margin-top: 40px;
+}
+.adVideoSectionContainer .adVideoListContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.adVideoSectionContainer .adVideoListContainer .adVideoContainer{
+    width: 32%;
+    text-align: center;
+}
+.adVideoSectionContainer .adVideoListContainer .adVideoContainer .adVideo{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.adVideoSectionContainer .adVideoListContainer .adVideoContainer .adVideo .adVideoImg{
+    width: 100%;
+    object-fit: fill;
+    border-radius: 20px;
+}
+.adVideoSectionContainer .adVideoListContainer .adVideoContainer .adVideo .playButton{
+    position: absolute;
+    width: 80px; height: 80px;
+    margin: -40px 0 0 -40px;
+    left: 50%;
+    top: 50%;
+}
+.adVideoSectionContainer .adVideoListContainer .adVideoContainer .adVideoTitle{
+    font-size: 25px;
+    color: #502314;
+    margin-top: 20px;
+    /* font-family: SDGothicNeoRound-hEb; */
+}
+
+/* introduceContainer */
+.introduceContainer{
+    margin-top: 80px;
+}
+
+.introduceContainer .wideBanner{
+    background-color: #502314;
+    color: #fffcf8;
+    padding: 30px 60px;
+    margin-top: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.introduceContainer .wideBanner .left .title{
+    font-size: 50px;
+}
+.introduceContainer .wideBanner .left .description{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.introduceContainer .wideBanner .right{
+    display: flex;
+    align-items: center;
+}
+.introduceContainer .wideBanner .right .bike-img{
+    width: 120px;
+}
+.introduceContainer .wideBanner .right .tel{
+    font-size: 70px;
+    color: #fa0;
+    margin-left: 20px;
+}
+/* newsContainer */
+.newsContainer{
+    margin-top: 80px;
+}
+
+/* appInstallContainer */
+.appInstallContainer{
+    background-color: #e4d7c8;
+    display: flex;
+    margin-top: 60px;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+.appInstallContainer .left{
+    width: 35%;
+    position: relative;
+}
+.appInstallContainer .left .phone{
+    width: 100%;
+}
+.appInstallContainer .left .phone-view{
+    position: absolute;
+    width: 60%;
+    left: 131px;
+    height: 100%;
+    overflow: hidden;
+}
+/* .appInstallContainer .left .phone-view .phone-view-img{
+    width: 100%;
+    object-fit: contain;
+} */
+.appInstallContainer .right{
+    width: 60%;
+}
+.appInstallContainer .right .title{
+    font-size: 40px;
+}
+.appInstallContainer .right .badge-container{
+    margin: 30px 0;
+    display: flex;
+}
+.appInstallContainer .right .badge-container .badge{
+    background-color: #502314;
+    padding: 10px 20px;
+    margin-right: 10px;
+    color: #fffcf8;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.appInstallContainer .right .qr-and-buttons{
+    display: flex;
+    height: 120px;
+}
+.appInstallContainer .right .qr-and-buttons .qrContainer{
+    margin-right: 30px;
+}
+.appInstallContainer .right .qr-and-buttons .qrContainer .qrCodeImg{
+    height: 100%;
+}
+.appInstallContainer .right .qr-and-buttons .downloadButtonContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.appInstallContainer .right .qr-and-buttons .downloadButtonContainer .downloadButton{
+    border-style: none;
+}
+
+
+/* COMMON(공통) */
+.border-radius{
+    border-radius: 20px;
+}
+.sectionTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.sectionTitle .titleText{
+    color: #502314;
+    font-size: 40px;
+}
+.sectionTitle .optionText{
+    color: #502314;
+    font-size: 30px;
+}
+.sectionTitle .optionText a{
+    color: #502314;
+    text-decoration: none;
+}
+.cardContainer{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.cardContainer .card{
+    width: 32%;
+    height: 500px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cardContainer .card-vertical-wrap{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    height: 500px;
+    justify-content: space-between;
+}
+.cardContainer .card .card-top{
+    height: 55%;
+    padding: 30px;
+}
+.cardContainer .card .card-badge{
+    background: #f5ebdc;
+    display: inline;
+    padding: 10px 20px;
+    color: #502314;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.cardContainer .card .card-title{
+    margin-top: 35px;
+    color: #502314;
+    font-size: 30px;
+}
+.cardContainer .card .title-center{
+    text-align: center;
+}
+.cardContainer .card .card-button{
+    position: relative;
+    text-align: end;
+    color: #502314;
+    font-size: 22px;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.cardContainer .card .card-button .ico-move{
+    position: relative;
+    top: 4px;
+    width: 26px;
+    margin-left: 10px;
+}
+.cardContainer .card .card-image{
+    width: 100%;
+    height: 45%;
+}
+.cardContainer .card .card-image .card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardContainer .card .card-dots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.cardContainer .card .card-dots .dot{
+    width: 10px; height: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+    margin: 0 10px;
 }
