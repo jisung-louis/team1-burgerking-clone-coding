@@ -379,6 +379,8 @@ a {
     display: flex;
     padding: 10px 20px;
     height: 100%;
+
+    font-family: "BKBulMatPro-Bold";
 }
 
 .m1 > a > span{
@@ -457,6 +459,8 @@ a {
     padding-left: 25px;
     font-size: 17px;
     display: none;
+    font-family: Sandoll GothicNeoRound;
+    font-weight: 300;
 }
 
 .H1:hover .sub_menu{
@@ -487,6 +491,8 @@ a {
     padding-left: 25px;
     font-size: 17px;
     display: none;
+    font-family: Sandoll GothicNeoRound;
+    font-weight: 300;
 }
 
 .sub_menu2 > li > a > span{
@@ -527,4 +533,38 @@ a {
     margin: 0;
     outline: none;
     display: inline-flex;
+}
+
+
+#scroll{
+    position: sticky;
+    bottom: 0;
+    margin-top: 90px;
+    z-index: 50;
+}
+
+.top_button{
+    position: absolute;
+    right: -40px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    text-indent: -999em;
+    background-color: rgba(255, 252, 248, .6);
+    border: 1px solid #e4d7c8;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 50;
+    background: url(/news/img/위로버튼.svg) no-repeat center 10px;
+}
+
+
+.sub_menu > li > a > span:hover{
+    color: white;
+}
+.sub_menu2 > li > a > span:hover{
+    color: white;
+}
+.m1 > a > span:hover{
+    color:#d62300;
 }

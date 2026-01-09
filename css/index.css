@@ -455,6 +455,9 @@ a {
     font-size: 24px;
     font-weight: 700;
 }
+.m1 > a > span:hover{
+    color:#d62300;
+}
 
 .side_menu{
     display: flex;
@@ -544,8 +547,15 @@ a {
 
 .sub_menu > li > a > span{
     font-size: 17px;
+    font-family: Sandoll GothicNeoRound;
 }
 
+.sub_menu > li > a > span:hover{
+    color: white;
+}
+.sub_menu2 > li > a > span:hover{
+    color: white;
+}
 .sub_menu2{
     top: 80px;
     left: -50px;
@@ -561,6 +571,7 @@ a {
 
 .sub_menu2 > li > a > span{
     font-size: 17px;
+    font-family: Sandoll GothicNeoRound;
 }
 
 
@@ -705,4 +716,27 @@ a {
     width: 1px;
     height: 14px;
     background-color: #e0d8cc;
+}
+
+
+#scroll{
+    position: sticky;
+    bottom: 0;
+    margin-top: 90px;
+    z-index: 50;
+}
+
+.top_button{
+    position: absolute;
+    right: -40px;
+    bottom: 20px;
+    width: 54px;
+    height: 54px;
+    text-indent: -999em;
+    background-color: rgba(255, 252, 248, .6);
+    border: 1px solid #e4d7c8;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+    z-index: 50;
+    background: url(/news/img/위로버튼.svg) no-repeat center 10px;
 }
