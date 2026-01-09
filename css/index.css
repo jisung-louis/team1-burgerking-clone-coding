@@ -740,3 +740,9 @@ a {
     z-index: 50;
     background: url(../news/img/위로버튼.svg) no-repeat center 10px;
 }
+.fontsize{
+    font-size: 30px;
+}
+.font-dubogi{
+    font-size: 20px;
+}
