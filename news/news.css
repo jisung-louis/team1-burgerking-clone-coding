@@ -2,14 +2,14 @@
     font-family: Sandoll GothicNeoRound;
     font-style: normal;
     font-weight: 400;
-    src: url(/font/SDGothicNeoRound-gBd.otf) format("opentype")
+    src: url(../font/SDGothicNeoRound-gBd.otf) format("opentype")
 }
 
 @font-face {
     font-family: Sandoll GothicNeoRound1;
     font-style: normal;
     font-weight: 700;
-    src: url(/font/SDGothicNeoRound-hEb.otf) format("opentype")
+    src: url(../font/SDGothicNeoRound-hEb.otf) format("opentype")
 }
 
 
@@ -17,7 +17,7 @@
     font-family: Pretendard;
     font-style: normal;
     font-weight: 700;
-    src: url(/font/BKBulMatPro-Bold.woff) format("opentype")
+    src: url(../font/BKBulMatPro-Bold.woff) format("opentype")
 }
 
 
@@ -272,7 +272,7 @@ button {
     min-width: 200px;
     height: 24px;
     text-indent: -99999px;
-    background: url(/news/img/logo.svg) no-repeat 50%;
+    background: url(./img/logo.svg) no-repeat 50%;
 }
 
 .menu {
@@ -332,7 +332,7 @@ button {
 }
 
 .채용{
-    background: url(/news/img/채용사이트.svg) no-repeat left 16px center;
+    background: url(./img/채용사이트.svg) no-repeat left 16px center;
     background-color: #502314;
     border-radius: 30px;
     width: 48%;
@@ -342,7 +342,7 @@ button {
 
 .가맹점{
     border-radius: 320px;
-    background: url(/news/img/가맹점모집.svg) no-repeat left 16px center;
+    background: url(./img/가맹점모집.svg) no-repeat left 16px center;
     background-color: #502314;
     background-size: 14px;
     width: 52%;
@@ -576,5 +576,5 @@ button {
     border-radius: 100px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
     z-index: 50;
-    background: url(/news/img/위로버튼.svg) no-repeat center 10px;
+    background: url(./img/위로버튼.svg) no-repeat center 10px;
 }
